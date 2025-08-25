@@ -1,0 +1,30 @@
+<!-- ... (head, header, footer as in index.html) ... -->
+<main>
+    <section class="form-section">
+        <div class="form-container">
+            <h2>List a New Product</h2>
+            <form id="create-product-form">
+                <div class="form-group">
+                    <label for="product-name">Product Name:</label>
+                    <input type="text" id="product-name" name="product_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="product-description">Description:</label>
+                    <textarea id="product-description" name="product_description" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="product-price">Price ($):</label>
+                    <input type="number" id="product-price" name="product_price" step="0.01" min="0" required>
+                </div>
+                <div class="form-group">
+                    <label for="product-image">Product Image URL:</label>
+                    <input type="text" id="product-image" name="product_image" placeholder="e.g., https://example.com/image.jpg">
+                    <small>In a real app, this would be an image upload field.</small>
+                </div>
+                <button type="submit" class="btn btn-primary">List Product</button>
+            </form>
+            <p class="chat-disclaimer" style="margin-top: 20px;">Note: This form is for demonstration. Product data will not be saved.</p>
+        </div>
+    </section>
+</main>
+<!-- ... (footer, chat modal, script link) ... -->

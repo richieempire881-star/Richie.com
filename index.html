@@ -1,0 +1,103 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parrot.com - Your Ultimate Shopping Destination</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://Parrot.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Parrot.com</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart (<span id="cart-count">0</span>)</a></li>
+                    <li><a href="account.html">Account</a></li>
+                    <li><a href="create-product.html">Sell</a></li>
+                    <li><a href="#" id="open-chat-btn"><i class="fas fa-comments"></i> Chat</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="container">
+                <h1>Discover Amazing Products at Parrot.com</h1>
+                <p>Your one-stop shop for everything you need.</p>
+                <a href="products.html" class="btn btn-primary">Shop Now</a>
+            </div>
+        </section>
+
+        <section class="featured-products">
+            <div class="container">
+                <h2>Featured Products</h2>
+                <div class="product-grid">
+                    <!-- Example Product Card -->
+                    <div class="product-card">
+                        <img src="img/ges.jpeg" alt="Product 1">
+                        <img src="img/iag.jpeg" alt="product 1">
+                        <h3>Stylish Headphones</h3>
+                        <p class="price">¢157</p>
+                        <button class="btn btn-secondary add-to-cart" data-product-id="1" data-product-name="Stylish Headphones" data-product-price="99.99">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/iage.jpeg" alt="Product 2">
+                        <img src="img/es.jpeg" alt="product 2">
+                        <h3>Smartwatch Pro</h3>
+                        <p class="price">¢150</p>
+                        <button class="btn btn-secondary add-to-cart" data-product-id="2" data-product-name="Smartwatch Pro" data-product-price="199.99">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/ima.jpeg" alt="Product 3">
+                        <img src="img/ma.jpeg" alt="product3">
+                        
+                        <h3>Ergonomic Mouse</h3>
+                        <p class="price">¢110.99</p>
+                        <button class="btn btn-secondary add-to-cart" data-product-id="3" data-product-name="Ergonomic Mouse" data-product-price="49.99">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/im.jpeg" alt="Product 4">
+                        <img src="img/age.jpeg" alt="product4">
+                        <h3>Portable Speaker</h3>
+                        <p class="price">¢79.99</p>
+                        <button class="btn btn-secondary add-to-cart" data-product-id="4" data-product-name="Portable Speaker" data-product-price="79.99">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="view-all-products">
+                    <a href="products.html" class="btn btn-tertiary">View All Products</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Parrot.com. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Chat Modal -->
+    <div id="chat-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Live Chat Support</h2>
+            <div class="chat-window">
+                <div class="message received">Hello! How can I help you today?</div>
+                <div class="message sent">I have a question about an order.</div>
+            </div>
+            <input type="text" placeholder="Type your message..." class="chat-input">
+            <button class="btn btn-primary chat-send-btn">Send</button>
+            <p class="chat-disclaimer">Note: This is a simulated chat. No real messages are sent.</p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
